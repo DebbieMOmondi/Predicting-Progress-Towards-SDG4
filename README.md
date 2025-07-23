@@ -1,6 +1,5 @@
 # Predicting Progress Toward SDG 4: A Global Education Classification Model
 
-![SDG 4 Logo](https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_Icons-04.jpg)
 
 ## Overview
 This project focuses on predicting whether countries are on track to meet **Sustainable Development Goal 4 (SDG 4)**, which aims to ensure inclusive and equitable quality education for all. Using machine learning classification techniques, we analyze global education indicators from the **United Nations SDG Global Database** to identify countries at risk of not achieving SDG 4 targets. The project follows an iterative modeling approach, employing logistic regression, decision trees, and random forests to predict educational outcomes based on features like proficiency levels, education level, gender, and geographic area.
@@ -24,7 +23,6 @@ The dataset is sourced from the **United Nations SDG Global Database**, specific
 - Demographic breakdowns (e.g., sex, age group)
 - Country-level data and time series
 
-![Dataset Snapshot](images/dataset_snapshot.png)
 
 The dataset is maintained by the UN Statistics Division and aggregates data from national statistical offices and international agencies like UNESCO. It was chosen for its comprehensive coverage of SDG 4 indicators and its relevance to global education policy.
 
@@ -59,14 +57,10 @@ The project employs an **iterative modeling approach** to predict whether a coun
   - The Random Forest model highlighted **type of skill** (math vs. reading), **education level**, and **country (GeoAreaName)** as the most influential predictors.
   - These findings suggest that geographic disparities and specific skill deficits (e.g., math proficiency) are critical factors in educational outcomes.
 
-![Feature Importance Plot](images/feature_importance.png)
-
 - **Limitations**:
   - Sparse or outdated data for some countries may skew predictions.
   - The binary threshold (e.g., 75% proficiency) may oversimplify complex educational progress.
   - The model may not capture recent improvements due to dataset limitations.
-
-![Confusion Matrix](images/confusion_matrix.png)
 
 ## Conclusion
 This project demonstrates that machine learning can effectively identify countries at risk of not meeting SDG 4 targets, enabling stakeholders to prioritize interventions. Key findings include:
